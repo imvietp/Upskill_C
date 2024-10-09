@@ -8,6 +8,7 @@
 
 // User Defined Data Types: struct, enum, union
 
+// void is not a valid type for declaring variables. void * is valid though.
 void primitive_type()
 {
     int integer_type = 6;
