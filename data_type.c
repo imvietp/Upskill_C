@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 // There are 3 types of data type:
-// Primitive: int, float, double, char, ...
+// Primitive: void, short, int, float, double, char, ...
+// Also, there are have unsigned and signed, long and long long
+
 // Derived Types: array, pointer, function.
+
 // User Defined Data Types: struct, enum, union
 
 void primitive_type()
