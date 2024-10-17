@@ -63,7 +63,50 @@ void _print_arithmetic_Operator()
 }
 
 
+// Increment postfix
+int _unary_Operator_IncrementA(int k, int index)
+{
+    k = index++;
+    return k;
+}
+
+void _print_unary_Operator_IncrementA()
+{
+    int k = 0;
+    int index;
+
+    printf("Type index = ");
+    scanf("%d", &index);
+
+    int total = _unary_Operator_IncrementA(k, index);
+
+    printf("\nAfter postfix: K = %d", total);
+}
+
+
+// Increment prefix
+int _unary_Operator_PreIncrementA(int k, int index)
+{
+    k = ++index;
+    return k;
+}
+
+void _print_unary_Operator_PreIncrementA()
+{
+    int k, index;
+
+    printf("Type index = ");
+    scanf("%d", &index);
+
+    int total = _unary_Operator_PreIncrementA(k, index);
+
+    printf("\nAfter prefix: K = %d", total);
+}
+
+
 int main()
 {
-    _print_arithmetic_Operator();
+    // _print_arithmetic_Operator();
+    // _print_unary_Operator_IncrementA();
+    _print_unary_Operator_PreIncrementA();
 }
